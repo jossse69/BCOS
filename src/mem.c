@@ -9,6 +9,7 @@ static unsigned int num_allocated_blocks = 0;
 static char memory_pool[1024 * 1024]; // 1MB memory pool
 static char* memory_pool_ptr = memory_pool;
 
+
 void* malloc(size_t size) {
     void* ptr = memory_pool_ptr;
     memory_pool_ptr += size;
@@ -19,6 +20,7 @@ void free(void* ptr) {
     // No need to implement free() as there is no need to free memory in a static memory pool
     // You can ignore this function if you don't need to free memory
 }
+
 
 // Function implementations
 void* allocate_memory(unsigned int size) {
