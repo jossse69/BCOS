@@ -1,6 +1,8 @@
 #ifndef _GTD_H
 #define _GTD_H
 
+#include <stdint.h>
+
 typedef struct {
     uint16_t limit_low;
     uint16_t base_low;

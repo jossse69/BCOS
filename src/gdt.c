@@ -1,4 +1,5 @@
 #include "../include/gdt.h"
+#include <stdint.h>
 
 gdt_entry_t gdt[3];
 gdt_ptr_t gdt_ptr;
