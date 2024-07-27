@@ -10,7 +10,7 @@ void kernel_main() {
     asm volatile ("cli");
 
      // Set up the GDT
-    gdt_init();
+    
 
     // Enable interrupts
     asm volatile ("sti");
